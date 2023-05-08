@@ -1,0 +1,181 @@
+
+
+:root{
+    --main-color: #e38528;
+    --bg-color: #fcf2e8;
+    --bg-header: #222;
+    --text-color: #fff;
+    --text2-color: #666;
+    --text-h3-color: #111;
+}
+
+
+.social-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 3rem;
+    position: fixed;
+    top: 30%;
+    right: -3rem;
+    z-index: 99999;
+}
+
+
+
+.social-container h2{
+    font-size: 1.5rem;
+    letter-spacing: 0.8rem;
+    color: var(--text-h3-color);
+    font-weight: 600;
+    cursor: pointer;
+    -ms-writing-mode: vertical-lr;
+    -webkit-writing-mode: vertical-lr;
+    writing-mode: vertical-lr;
+    -webkit-animation: follow 2s infinite alternate-reverse;
+    animation: follow 2s infinite alternate-reverse;
+}
+
+.social-container:hover h2, .border::before{
+    animation-play-state: paused;
+}
+
+
+@keyframes follow {
+	to {
+		opacity: 0.4;
+        letter-spacing: 1rem;
+	}
+}
+
+@-webkit-keyframes follow {
+	to {
+		opacity: 0.4;
+        letter-spacing: 1rem;
+	}
+}
+
+
+.border{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    width: 120px;
+    height: 2px;
+    position: relative;
+    -o-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.border::before{
+    content: '';
+    display: flex;
+    margin: 1rem 0;
+    width: 40px;
+    height: 2px;
+    position: absolute;
+    background: var(--text-h3-color);
+    -o-transition: 0.3s linear;
+    -webkit-transition: 0.3s linear;
+    -moz-transition: 0.3s linear;
+    -ms-transition: 0.3s linear;
+    transition: 0.3s linear;
+    -webkit-animation: follow 2s infinite alternate-reverse;
+    animation: follow 2s infinite alternate-reverse;
+}
+
+.social-container:hover .border::before{
+    width: 50%;
+}
+
+.social-button a{
+    display: flex;
+    justify-content: center;
+    color: var(--text-h3-color);
+    font-size: 1.7rem;
+    margin: 2rem 0;
+    pointer-events: none;
+    -o-transition: 0.5s linear;
+    -webkit-transition: 0.5s linear;
+    -moz-transition: 0.5s linear;
+    -ms-transition: 0.5s linear;
+    transition: 0.5s linear;
+    opacity: 0;
+}
+
+.social-button a:nth-child(odd){
+    -o-transform: translateX(-40px);
+    -webkit-transform: translateX(-40px);
+    -moz-transform: translateX(-40px);
+    -ms-transform: translateX(-40px);
+    transform: translateX(-40px);
+}
+
+.social-button a:nth-child(even){
+    -o-transform: translateX(40px);
+    -webkit-transform: translateX(40px);
+    -moz-transform: translateX(40px);
+    -ms-transform: translateX(40px);
+    transform: translateX(40px);
+}
+
+
+.social-container:hover .social-button a{
+    -o-transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.social-button a i{
+    -o-transition: 0.2s linear;
+    -webkit-transition: 0.2s linear;
+    -moz-transition: 0.2s linear;
+    -ms-transition: 0.2s linear;
+    transition: 0.2s linear;
+}
+
+.fa-facebook-f:hover{
+    color: #1b74e4;
+}
+.fa-linkedin-in:hover{
+    color: #0a66c2;
+}
+.fa-github:hover{
+    color: #111;
+}
+.fa-dribbble:hover{
+    color: orangered;
+}
+.fa-tiktok:hover{
+    color: #010101;
+}
+.fa-instagram:hover{
+    color: #c32aa3;
+}
+
+@media screen and (max-width:800px){
+    .social-container{
+        gap: 3rem;
+        top: 30%;
+        right: -4rem;
+        z-index: 1;
+    }
+}
+
+
+@media screen and (max-width:600px){
+    .social-container{
+        gap: 3rem;
+        top: 30%;
+        right: -5rem;
+        z-index: 1;
+    }
+}

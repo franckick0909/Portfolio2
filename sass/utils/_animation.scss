@@ -1,0 +1,119 @@
+
+
+:root{
+    --main-color: #e38528;
+    --bg-color: #fcf2e8;
+    --bg-header: #222;
+    --text-color: #fff;
+    --text2-color: #666;
+    --text-h3-color: #111;
+}
+
+/* ======  ANIMATION HEADER NAV A (class .link) START ====== */
+
+.link1{
+    animation-delay: 1s;
+}
+.link2{
+    animation-delay: 1.1s;
+}
+.link3{
+    animation-delay: 1.2s;
+}
+.link4{
+    animation-delay: 1.3s;
+}
+.link5{
+    animation-delay: 1.4s;
+}
+.link6{
+    animation-delay: 1.5s;
+}
+
+@keyframes slide-nav{
+    0%{
+        opacity: 0;
+        transform: translateX(-200px);
+        
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+/* ======  ANIMATION HEADER NAV A (class .link) END ====== */
+
+/* -------------------------------------------------------------------------------------------*/
+
+/* ======  ANIMATION .mouse + .scroll (in #home) START ====== */
+
+@keyframes wheel {
+	to {
+		opacity: 0;
+		transform: translateY(60px);
+		-webkit-transform: translateY(60px);
+		-moz-transform: translateY(60px);
+		-ms-transform: translateY(60px);
+		-o-transform: translateY(60px);
+    }
+}
+
+@-webkit-keyframes wheel {
+	to {
+        opacity: 0;
+		transform: translateY(60px);
+		-webkit-transform: translateY(60px);
+		-moz-transform: translateY(60px);
+		-ms-transform: translateY(60px);
+		-o-transform: translateY(60px);
+	}
+}
+
+/* ======  ANIMATION .mouse + .scroll (in #home) END ====== */
+
+
+/* -------------------------------------------------------------------------------------------*/
+
+
+/* ======  ANIMATION .card .pourcent svg circle (in #about) START ====== */
+
+
+@keyframes fadeIn{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes animDot{
+    0%{
+        -o-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        -o-transform: rotate(calc(3.6deg * var(--num)));
+        -webkit-transform: rotate(calc(3.6deg * var(--num)));
+        -moz-transform: rotate(calc(3.6deg * var(--num)));
+        -ms-transform: rotate(calc(3.6deg * var(--num)));
+        transform: rotate(calc(3.6deg * var(--num)));
+    }
+}
+
+/* ======  ANIMATION .card .pourcent svg circle (in #about) END ====== */
+
+
+/* -------------------------------------------------------------------------------------------*/
+
+
+/* ======  ANIMATION  ====== */
+
+
+
+
+
+

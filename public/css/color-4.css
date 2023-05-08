@@ -1,0 +1,20 @@
+
+
+
+:root{
+    --main-color: #1680dd;
+    --bg-header: #0D1629;
+    --text-color: #Fff;
+    --text2-color: #829CBC;
+    --text-h3-color: #1D3461;
+}
+
+:root{
+    --glass1: rgba(60, 9, 108, 0.3); 
+    --main-color: #7B2CBF;
+    --bg-color: #E0AAFF;
+
+    --text-color: #fff;
+    --text2-color: #886aa5;
+    --text-h3-color: #10002B;
+}
