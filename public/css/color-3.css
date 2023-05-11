@@ -3,11 +3,11 @@
 
 
 :root{
-    --glass1: rgba(121, 88, 21, 0.2); 
-    --main-color: #FFE900;
-    --bg-color: #546A7B;
+    --glass1: rgba(84, 106, 123, 0.2); 
+    --main-color: #FFC300;
+    --bg-color: #000000;
     --bg-header: #222;
     --text-color: #FDFDFF;
-    --text2-color: #F2AF29;
-    --text-h3-color: #000000;
+    --text2-color: #ffee99;
+    --text-h3-color: #546A7B;
 }

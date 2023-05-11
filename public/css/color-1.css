@@ -5,14 +5,14 @@
 
 
 :root{
-    --glass1: rgba(139, 252, 0, 0.2); 
+    --glass1: rgba(113, 9, 183, 0.1); 
 
-    --main-color: #DC0073;
-    --bg-color: #6E46B6;
+    --main-color: #F72585;
+    --bg-color: #3A0CA3;
 
-    --text-color: #F5B700;
-    --text2-color: #3769D7;
-    --text-h3-color: #04E762;
+    --text-color: #fff;
+    --text2-color: #4CC9F0;
+    --text-h3-color: #4361EE;
 
     --text-shadow: 0px 3px 3px rgba(255,255,255,0.5);
 }
